@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devanath Selvaraj | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafc;
+      color: #333;
+    }
+    /* Header Section */
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1.5s ease;
+    }
+    header p {
+      font-size: 1.3rem;
+      animation: fadeInUp 1.5s ease;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 119, 182, 0.9);
+      padding: 1rem 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 10%;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0077b6;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid #00b4d8;
+      padding-left: 0.8rem;
+    }
+
+    /* About Section */
+    #about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Project Cards */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #0077b6;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Skills Section */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill {
+      background: #0077b6;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    #contact a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #0077b6;
+      color: white;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Devanath Selvaraj</h1>
+    <p>Cyber Security Student | Web Developer | Innovator</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Devanath — a passionate Cyber Security student who loves creating modern, user-friendly web applications.
+      I’m always eager to explore new technologies and build projects that make life easier and more creative.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>MAHENDRA ENGINEERING COLLEGE</strong> — BE. in CYBER SECURITY (Expected 2028)</p>
+    <ul>
+      <li>GPA: 7.79 /10 </li>
+      <li>Key Courses: Data Structures, Web Programming, AI, UX Design</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Smart Study Planner</h3>
+        <p>A productivity web app that helps students organize their study schedule and track progress.</p>
+      </div>
+      <div class="card">
+        <h3>Campus Info Chatbot</h3>
+        <p>An AI-powered chatbot built using Python that answers common student queries in real-time.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>The personal site you’re viewing — designed using HTML, CSS, and creative energy!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">Python</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">React</span>
+      <span class="skill">HTML & CSS</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Git & GitHub</span>
+      <span class="skill">Figma</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:alex.rivera@email.com">sdevanath703@gmail.com</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/devanath-s-829780337/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BSeHmQFCCQoaXdmFMS9I0Aw%3D%3D">LinkedIn</a> |
+      <a href="https://github.com/6113241281017">GitHub</a> |
+      <a href="https://www.instagram.com/the_solitary_boy_devanath_?igsh=MTJlMjl4OGlmam8wcA==">Instagram</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Devanath Selvaraj. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
